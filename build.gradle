@@ -3,4 +3,12 @@ apply plugin: 'java'
 group = 'com.moowork'
 version = '0.0.1-SNAPSHOT'
 
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.goebl:david-webb:1.1.0'
+    compile 'com.squareup.okhttp:okhttp:2.0.0'
+}
 

@@ -16,9 +16,9 @@ public final class JSparkBuilder
         return this;
     }
 
-    public JSparkBuilder token( final String token )
+    public JSparkBuilder accessToken( final String accessToken )
     {
-        this.spark.token = token;
+        this.spark.accessToken = accessToken;
         return this;
     }
 
