@@ -1,0 +1,6 @@
+apply plugin: 'java'
+
+group = 'com.moowork'
+version = '0.0.1-SNAPSHOT'
+
+
