@@ -17,30 +17,6 @@ final class JSparkImpl
     protected String deviceId;
 
     @Override
-    public int analogRead( final String pin )
-    {
-        return Integer.parseInt( executeFunction( "analogread", pin ) );
-    }
-
-    @Override
-    public boolean digitalRead( final String pin )
-    {
-        return Integer.parseInt( executeFunction( "digitalread", pin ) ) != 0;
-    }
-
-    @Override
-    public int analogWrite( final String pin, final int value )
-    {
-        return Integer.parseInt( executeFunction( "analogwrite", pin ) );
-    }
-
-    @Override
-    public boolean digitalWrite( final String pin, final boolean value )
-    {
-        return Integer.parseInt( executeFunction( "digitalwrite", pin ) ) != 0;
-    }
-
-    @Override
     public String getVariable( final String name )
     {
         return doExecute( name, null );
